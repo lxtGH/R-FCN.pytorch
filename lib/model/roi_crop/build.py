@@ -5,8 +5,11 @@ from torch.utils.ffi import create_extension
 
 #this_file = os.path.dirname(__file__)
 
-sources = ['src/roi_crop.c']
-headers = ['src/roi_crop.h']
+#sources = ['src/roi_crop.c']
+#headers = ['src/roi_crop.h']
+# note that we need to modify a lot for non-gpu operation
+sources = []
+headers = []
 defines = []
 with_cuda = False
 
